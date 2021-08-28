@@ -297,6 +297,9 @@ nav{
      background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(./Socialbook_img/female-2.jpg);
 }
 
+.story{
+    cursor: pointer;
+}
 .story.story-1 img{
     top: unset;
     left: 50%;
@@ -509,4 +512,42 @@ nav{
     justify-content: space-between;
     text-decoration: none;
     color: #626262;
+}
+
+
+/* ///......media query....../// */
+
+
+@media(min-width: 280px) and (max-width: 868px){
+   /* .nav-right .search-box{
+       display: none;
+   } */
+
+   .nav-left .icons-nav{
+       display: none;
+   }
+
+    .left-sidebar, .right-sidebar{
+        display: none;
+    }
+
+    .search-box{
+        width: 250px;
+    }
+
+    /* .nav-user-icon{
+        display: none;
+    } */
+    
+    .main-content{
+        flex-basis: 100%;
+    }
+
+}
+
+@media(min-width: 869px) and (max-width: 1200px){
+    .left-sidebar, .right-sidebar{
+        margin: 0 1rem;
+        font-size: 0.7srem;
+    }
 }
